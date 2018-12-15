@@ -202,9 +202,9 @@ class WxRobot_Cmd_Text{
 		//大小写不区分
 		$prefix = strtolower($prefix);
 		switch($prefix){
-			case 'n': $result = $this->wp->news($suffix);break;
-			case 'h': $result = $this->wp->hot($suffix);break;
-			case 'r': $result = $this->wp->rand($suffix);break;
+			case 'n': $result = $this->wp->news($int);break;
+			case 'h': $result = $this->wp->hot($int);break;
+			case 'r': $result = $this->wp->rand($int);break;
 			default: break;
 		}
 
